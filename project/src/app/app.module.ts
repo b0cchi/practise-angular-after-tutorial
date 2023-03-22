@@ -6,10 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './view/user-list/user-list.component';
 import { UserListItemComponent } from './view/user-list-item/user-list-item.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { UserListFilterComponent } from './view/user-list-filter/user-list-filter.component';
 
 @NgModule({
-  declarations: [AppComponent, UserListComponent, UserListItemComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [AppComponent, UserListComponent, UserListItemComponent, UserListFilterComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
